@@ -1,6 +1,6 @@
 ## 🚀 How to Use
 1. Clone this repository:
-   ```bash
+```bash
    git clone https://github.com/MuhammadAqill/Learn_CSS.git
 ````
 
