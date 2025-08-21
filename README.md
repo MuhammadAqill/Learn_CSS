@@ -11,7 +11,6 @@
 ## 📂 Folder Structure
 
 * `style.css` → main CSS file
-* `backup/` → files ignored in `.gitignore`
 
 ---
 
