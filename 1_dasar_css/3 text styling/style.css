@@ -1,0 +1,31 @@
+/* Text Styling */
+/* color - colorname, hexadecimal, rgb - memberikan warna pada tulisan */
+/* text-align - left, right, center, justify - mengatur format paragram / text */
+/* text-indent - px, % - memberi indentasi pada paragraf / text */
+/* text-decoration - none, underline, overline, line-through - mengatur dekorasi pada teks */
+/* text-transform - none, lowercase, uppercase, capitalize - mengubah jenis huruf menjadi huruf besar, kecil / kapital */
+/* letter-spacing - normal, px - mengatur spasi antara huruf */
+/* word-spacing - normal, px - mengatur spasi antara kata */
+
+h1 {
+    font-size: 100px;
+    /* https://colorpicker.com */
+    /* try -> purple, #4F38AB, rgb(0,0,0) */
+    color: #019569;
+    text-align: center;
+    /* try -> none, underline, overline, overline, line-through */
+    text-decoration: underline;
+    /* try -> none, lowercase, uppercase, capitalize */
+    text-transform: uppercase;
+    word-spacing: 10px;
+
+}
+
+p {
+    text-indent: 100px;
+    letter-spacing: 5px;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,80 @@
+<!-- mengubah display - digunakan untuk kasus-kasus tertentu -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>div & span</title>
+
+    <style>
+        .navigasi .ul li {
+            display: inline;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Selamat Datang Di Website Kami</h1>
+    </div>
+
+    <!-- lebar dan tinggi elemennya sebesar konted yang ada di dalamnya -->
+    <div class="navigasi">
+        <hr>
+        <h2>li defaultnya: block, sedangkan a defaultnya: inline</h2>
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+            <li><a href="#">Link 5</a></li>
+        </ul>
+        <hr>
+        <h2>mengubah tag li yang tadi defaultnya block menjadi > inline</h2>
+        <hr>
+        <ul class="ul">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+            <li><a href="#">Link 5</a></li>
+        </ul>
+    </div>
+
+    <h1></h1>
+    <div class="main">
+        <h2>Judul Artikel</h2>
+        <!-- menambahkan baris -->
+        <h2>menambah baris baru</h2>
+        <!-- hanya image saja yang kita bisa atur width dan heightnya walan pun defaultnya display: inline -->
+        <img src="../logo.png" alt="">
+        <p><span>Lorem ipsum dolor sit amet</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores
+            quae expedita nisi. Magnam voluptatum
+            adipisci aliquam officiis tempore nobis, illum minus dolores libero velit delectus cumque quas cum, nostrum
+            veniam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus iure obcaecati sequi molestias
+            doloribus maxime, tempora dignissimos impedit perspiciatis iusto fugit nesciunt eius! Voluptates id
+            explicabo
+            cupiditate ex dolore tempora.
+            Eum id quisquam officiis hic perferendis placeat! Optio, enim maxime. Quis aperiam eaque ullam fugit tenetur
+            voluptatibus sunt eligendi veniam libero nemo consequuntur possimus doloribus molestias, consectetur
+            consequatur
+            eius necessitatibus.
+        </p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae dolor doloremque cumque sapiente quod nobis
+            itaque
+            cupiditate sequi corporis reiciendis, sunt facilis tempore, fuga iusto! Consectetur fugit nostrum esse ipsa!
+        </p>
+    </div>
+
+    <div class="copyright">
+        <p class="copyright">Copyright 2015, 4k1ra</p>
+    </div>
+</body>
+
+</html>

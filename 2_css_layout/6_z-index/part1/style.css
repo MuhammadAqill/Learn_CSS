@@ -1,0 +1,49 @@
+div {
+    width: 200px;
+    height: 200px;
+}
+
+.container {
+    width: 900px;
+    height: 650px;
+    margin: auto;
+    border: 5px solid red;
+    position: relative;
+
+}
+
+.kotak1 {
+    background-color: salmon;
+}
+
+.kotak2 {
+   background-color: lightgreen;
+}
+
+.kotak3 {
+    background-color: royalblue;
+}
+
+/* 1 */
+
+.positon-absolute {
+    position: absolute;
+}
+
+/* 2 */
+
+.top-left-1 {
+    top: 100px;
+    left: 100px;
+}
+
+.top-left-2 {
+    top: 200px;
+    left: 200px;
+}
+
+/* 3 */
+
+.z-kotak1 {
+    z-index: 1;
+}

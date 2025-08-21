@@ -1,0 +1,28 @@
+/* font */
+/* font-family - mengatur jenis font yang akan digunakan */
+/* font-size - px, %, em - mengatur ukuran font */
+/* font-weight - ligter, normal, 100-900, bold, bolder - mengatur ketebalan font */
+/* font-variant - normal, small-caps - mengubah font menjadi small caps */
+/* font-style - normal, italic, oblique - mengubah font menjadi bercetak miring */
+/* line-height - normal, px, em - mengatur posisi antara baris */
+
+/* shorhand */
+/* 
+
+property {
+    font: font-style; font-variant; font-weight; font-size; line-height; font-family;
+
+} */
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 100px;
+    font-weight: normal;
+    font-variant: small-caps;
+    font-style: italic;
+}
+
+p {
+    font-family: georgia, serif;
+    line-height: 50px;
+}

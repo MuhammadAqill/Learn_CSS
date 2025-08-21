@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGBa & HSLa</title>
+    <style>
+
+        body {
+
+            background-image: url(bg.jpeg);
+
+        }
+
+        .kotak-1 {
+
+            height: 300px;
+            width: 300px;
+            background-color: #f60;
+            text-align: center;
+            line-height: 300px;
+            position: relative;
+            background-color: rgb(255, 102, 0);
+
+        }
+
+        .kotak-2 {
+
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            display: inline-block;
+            position: absolute;
+            right: -50px;
+            bottom: -50px;
+            text-align: center;
+            line-height: 100px;
+            background-color: rgb(0, 81, 255, .5);
+
+        }
+
+        .kotak-1-hsla {
+
+            height: 300px;
+            width: 300px;
+            background-color: #f60;
+            text-align: center;
+            line-height: 300px;
+            position: relative;
+            background-color: hsla(24, 100%, 68%, 0.5)
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <br><br><br><br><br>
+    <h1>kotak 1 tidak transparan dan kotak 2 transparan</h1>
+    <h2>menggunakan background-color: rgba(red, green, blue, alpha);</h2>
+    <div class="kotak-1">kotak 1
+        <div class="kotak-2">kotak 2</div>
+    </div>
+
+    <br><br><br><br><br>
+    <h4>Penerangan</h4>
+    <ul>
+        <li>alpha merupakan opacity</li>
+    </ul>
+
+    <br><br><br><br><br>
+    <h2>menggunakan background-color: hsla(hue, saturation, lightness, alpha)</h2>
+    <div class="kotak-1-hsla">kotak 1
+        <div class="kotak-2">kotak 2</div>
+    </div>
+
+</body>
+</html>

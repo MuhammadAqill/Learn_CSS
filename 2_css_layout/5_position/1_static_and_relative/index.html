@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>static and relative</title>
+</head>
+<body>
+<!-- introduction -->
+
+    <h1>Introduction CSS Position</h1>
+    <ul>
+        <li>static adalah nilai default dari tiap-tiap elemen ketika tidak diberi properti position (nilai default)</li>
+        <li>menggunakan position selain static, akan membuat sebuah elemen menjadi seolah-olah berbeda dimensi dari elemen lainnya</li>
+        <li>elemen yang diberi position selain static dapat menggunakan properti top, left, bottom right untuk mengatur posisinya</li>
+    </ul>
+
+    <h2>Terdapat empat jenis position</h2>
+    <ul>
+        <li>static - nilai default</li>
+        <li>relative - </li>
+        <li>absolute</li>
+        <li>fixed</li>
+    </ul>
+
+
+<!-- topic -->
+
+    <hr>
+    <h2 style="text-align: center;">TOPIC 1 : POSITION RELATIVE</h2>
+    <ul>
+        <li>ketika menggerakkan elemen dengan posisi relative(menggunakan properti top, left, bottom dan right), ruang yang ditempati oleh elemen tersebut masih ada</li>
+        <li>ketika kita menggerakkan elemen dengan posisi realtive, elemen akan bergerak relatif terhadap posisi semulanya</li>
+        <li>jiak kita memberi properti top: 0; dan left: 0; maka elemen tidak berubah posisinya</li>
+    </ul>
+    <br>
+
+
+<!-- posisi default kotak -->
+
+    <h2>Posisi default kotak</h2>
+    <div class="kotak1">1</div>
+    <div class="kotak2">2</div>
+    <div class="kotak3">3</div>
+
+
+<!-- 1 -->
+
+    <br><br><br><br><br><br>
+    <h2>Menggunakan `margin-top: 50px`</h4>
+    <div class="kotak1">1</div>
+    <div class="kotak2 margin-top">2</div>
+    <div class="kotak3">3</div>
+
+    <h4>Penerangan:</h4>
+    <ul>
+        <li>di sini saya ingin menggerakk kotak2 sahaja, tetapi kotak3 turut sekali tertolak ke bawah</li>
+    </ul>
+
+
+<!-- 2 -->
+
+    <br><br><br><br><br><br>
+    <h2>Menggunakan `margin-bottom: -180px`</h2>
+    <div class="kotak1">1</div>
+    <div class="kotak2 margin-bottom">2</div>
+    <div class="kotak3">3</div>
+
+    <h4>Penerangan:</h4>
+    <ul>
+        <li>di sini saya ingin menggerakk kotak2 sahaja, tetapi kotak3 turut sekali tertarik ke bawah</li>
+    </ul>
+
+
+<!-- 3 -->
+
+    <hr>
+    <h2>Menggunakan `Postion: Relative` dan `top: 30px`/h2>
+    <div class="kotak1">1</div>
+    <div class="kotak2 position-relative">2</div>
+    <div class="kotak3">3</div>
+
+    <h4>Penerangan:</h4>
+    <ul>
+        <li>kotak3 berada pada kedudukannya, ini kerana diberikan fungsi position relative dan kotak2 naik 1 dimensi</li>
+        <li>ketika diberikan position relative pada kotak2 ia tidak akan mengacau kotak lain ketika ingin menggerakkannya</li>
+    </ul>
+
+<!-- 4 -->
+
+    <br>
+    <h2>Menggunakan `Postion: Relative` dan `left: 50px`/h2>
+    <div class="kotak1">1</div>
+    <div class="kotak2 position-relative left">2</div>
+    <div class="kotak3">3</div>
+
+    <h4>Penerangan:</h4>
+    <ul>
+        <li>kotak3 berada pada kedudukannya, ini kerana diberikan fungsi position relative dan kotak2 naik 1 dimensi</li>
+        <li>di atas menunjukkan ketika kotak2 digesarkan ke kanan kotak lain tidak bergerak mengikutnya</li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial Gradient</title>
+
+    <style>
+
+        .radial-1 {
+
+            height: 300px;
+            width: 600px;
+            background: radial-gradient(red, blue);
+
+        }
+
+        .radial-2 {
+
+            height: 300px;
+            width: 600px;
+            background: radial-gradient(red, green,blue);
+
+        }
+
+        .color-stop {
+
+            height: 300px;
+            width: 600px;
+            background: radial-gradient(red 10%, green 20%, blue 80%);
+
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h4>Hal yang anda perlu tahu radial-gradient</h4>
+    <ul>
+        <li>bukan property css3</li>
+        <li>melainkan value untuk background-image</li>
+        <li><span style="color: red; font-size: larger; font-weight: bold;">background-image: radial-gradient( {warna awal}, {warna akhir} );</span></li>
+    </ul>
+
+    <br><br><br><br><br>
+    <h1>contoh penggunaan `radial-gradient`</h1>
+    <div class="radial-1"></div>
+
+    <br><br><br><br><br>
+    <h1>multiple warna</h1>
+    <h4>
+        <ul>
+            <li>background-image: radial-gradient( {warna awal}, <span style="color: red;">{warna-2}</span>, <span style="color: green; font-size: 40px;">...</span>, {warna akhir} );</li>
+        </ul>
+    </h4>
+
+    <div class="radial-2"></div>
+
+    <br><br><br><br><br>
+    <h1>Penggunaa color stop</h1>
+    <div class="color-stop"></div>
+
+    <br><br><br><br><br>
+    <h1>Mengguakan sintaks lengkap</h1>
+    <ul>
+        <li>background: radial-gradient( {tipe} {jangkaun} at {posisi-y} {posisi-x}, {warna 1}, {warna 2} ) <span style="color: black; font-size: 40px;">...</span>{warna-n}</li>
+    </ul>
+
+    <ul>
+        <li>tipe</li>
+        <ul>
+            <li>ellipse(default)</li>
+            <li>circle</li>
+        </ul>
+        <li>jangkaun</li>
+        <ul>
+            <li>jarak dari pusat gradient ke sisi terluar-nya</li>
+            <ul>
+                <li>closest-corner - jarak dari pusat gradient ke susut terdekat elemen</li>
+                <li>closest-side - jarak dari pusat gradient ke sisiterdekat elemen</li>
+                <li>farthest-corner - jarak dari pusat gradient ke sudut terjauh elemen</li>
+                <li>farthest-side - jarak dari pusat gradient ke sisi terjauh elemen</li>
+            </ul>
+        </ul>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Latihan 1</title>
+</head>
+<body>
+    <h1>Normal flow vs Out of flow</h1>
+
+    <hr>
+    <h2>Normal flow</h2>
+    <div class="satu"></div>
+    <div class="dua"></div>
+    <div class="tiga"></div>
+
+    <br>
+    <h2>Out of flow, menggunakan properti `float: left;`</h2>
+    <div class="satu"></div>
+    <div class="dua out-dua"></div>
+    <div class="tiga"></div>
+
+    <h4>penerangan</h4>
+    <ul>
+        <li>kotak biru ada di bawah kotak hijau</li>
+        <li>ini terjadi kerana kotak hijau terapung (out of flow) dan kotak biru berada dibawah kotak hijau</li>
+    </ul>
+
+    <h2>Sebagai contoh kotak biru berada di bawah kotak hijau</h2>
+    <div class="satu"></div>
+    <div class="dua out-dua geser-dua"></div>
+    <div class="tiga"></div>
+
+    <br>
+    <h2>Memberikan `float: right;` pada kotak hijau</h2>
+    <div class="satu"></div>
+    <div class="dua bergerak-kanan"></div>
+    <div class="tiga"></div>
+
+    <hr>
+    <h2>Sebelum memberikan `float: left`</h2>
+    <div class="container">
+        <div class="satu satu-kotak"></div>
+        <div class="dua dua-kotak"></div>
+        <div class="tiga tiga-kotak"></div>
+    </div>
+
+    <h2>Selepas `float: left`</h2>
+    <div class="container">
+        <div class="satu satu-kotak"></div>
+        <div class="dua dua-kotak bergerak-kanan"></div>
+        <div class="tiga tiga-kotak"></div>
+    </div>
+
+    <br>
+    <hr>
+    <h2>Sebelum Menggunakan `float: left;` di img untuk membuat Text Wrapping</h2>
+    <div class="container">
+        <img src="img/logo.png" alt="logo">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi in sint ut minima omnis assumenda incidunt sit aliquam libero ipsum a possimus quasi ullam amet autem officiis laudantium, nisi ipsa. Tempora illum eveniet vero, odit voluptatum harum nemo, natus ut aut modi earum nam autem quisquam alias laudantium quaerat expedita commodi. Maxime, hic impedit? Repellat at minus consequatur earum voluptatem provident officia deleniti maiores suscipit iure error voluptate illo reiciendis accusantium fuga saepe exercitationem dolores explicabo ad officiis, eligendi nobis numquam. Veniam maiores unde deleniti odit libero nobis! Similique harum qui dolore laudantium dolores rem non optio voluptate repudiandae odit.</p>
+    </div>
+
+    <br>
+    <h2>Selepas Menggunakan `float: left;` di img untuk membuat Text Wrapping</h2>
+    <div class="container">
+        <img src="img/logo.png" alt="logo" class="text-wrapping-left">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi in sint ut minima omnis assumenda incidunt sit aliquam libero ipsum a possimus quasi ullam amet autem officiis laudantium, nisi ipsa. Tempora illum eveniet vero, odit voluptatum harum nemo, natus ut aut modi earum nam autem quisquam alias laudantium quaerat expedita commodi. Maxime, hic impedit? Repellat at minus consequatur earum voluptatem provident officia deleniti maiores suscipit iure error voluptate illo reiciendis accusantium fuga saepe exercitationem dolores explicabo ad officiis, eligendi nobis numquam. Veniam maiores unde deleniti odit libero nobis! Similique harum qui dolore laudantium dolores rem non optio voluptate repudiandae odit.</p>
+    </div>
+
+    <br>
+    <h2>menggunakan `float: right;`</h2>
+    <div class="container">
+        <img src="img/logo.png" alt="logo" class="text-wrapping-right">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi in sint ut minima omnis assumenda incidunt sit aliquam libero ipsum a possimus quasi ullam amet autem officiis laudantium, nisi ipsa. Tempora illum eveniet vero, odit voluptatum harum nemo, natus ut aut modi earum nam autem quisquam alias laudantium quaerat expedita commodi. Maxime, hic impedit? Repellat at minus consequatur earum voluptatem provident officia deleniti maiores suscipit iure error voluptate illo reiciendis accusantium fuga saepe exercitationem dolores explicabo ad officiis, eligendi nobis numquam. Veniam maiores unde deleniti odit libero nobis! Similique harum qui dolore laudantium dolores rem non optio voluptate repudiandae odit.</p>
+    </div>
+
+</body>
+</html>

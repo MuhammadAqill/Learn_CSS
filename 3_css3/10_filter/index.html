@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+
+    <style>
+
+        .center {
+            text-align: center;
+        }
+
+        .blur {
+            filter: blur(10px);
+        }
+
+        .bright {
+            /* -webkit-filter: brightness(200px); */
+            filter: brightness(200%);
+        }
+
+        .contrast {
+            filter: contrast(200%);
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Filter :</h1>
+    <h2>properti css3 yang digunakan untuk memberikan efek visual pada gambar, background atau border</h2>
+
+    <h2>Syntax > filter: {tipe-filter};</h2>
+
+    <h4>tipe filter</h4>
+    <ul>
+        <li>blur(px)</li>
+        <li>brightness(%)</li>
+        <li>contrast(%)</li>
+        <li>saturate(%)</li>
+        <li>grayscale(%)</li>
+        <li>sepia(%)</li>
+        <li>hue-rotate(deg)</li>
+        <li>invert(%)</li>
+        <li>opacity(%)</li>
+        <li>drop-shadow(same like box-shadow)</li>
+    </ul>
+
+    <br><br><br><br><br>
+    <h2>filter: blur(10px);</h2>
+    <div class="center">
+        <img class="blur" src="../9_vendor_prefixes/aqil.jpg" alt="">
+    </div>
+
+    <br><br><br><br><br>
+    <h2>filter: brightness(200%);</h2>
+    <h2>nilai defaultnya 100% atau 1</h2>
+    <div class="center bright">
+        <img src="../9_vendor_prefixes/aqil.jpg" alt="">
+    </div>
+
+    <br><br><br><br><br>
+    <h2>filter: contrast(200%);</h2>
+    <h2>nilai defaultnya 100% atau 1</h2>
+    <div class="center contrast">
+        <img src="../9_vendor_prefixes/aqil.jpg" alt="">
+    </div>
+
+</body>
+</html>

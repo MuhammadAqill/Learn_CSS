@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>absolute & fixed part2</title>
+</head>
+<body>
+
+<!-- 1 -->
+
+    <h2>Memberikan `position: absolute` dan `top: 150px`</h2>
+    <div class="kotak1">1</div>
+    <div class="kotak2 position-absolute">2</div>
+    <div class="kotak3">3</div>
+
+    <h4>Pertanyaan</h4>
+    <ul>
+        <li>Di sini mengapa ketika diberikan `top: 150px` ia keatas bukkannya kebawah?</li>
+    </ul>
+
+    <h4>Penerangan</h4>
+    <ul>
+        <li>Jadi di sini mengapa ia begitu sebab ketika kita menggerakkan elemen dengan posisi absolute, elemen akan bergerak relatif terhadap posisi dari elemen parent-nya</li>
+    </ul>
+
+<!-- 2 -->
+
+    <br><br>
+    <hr>
+    <h2>Contoh lain</h2>
+    <h2>Ketika memberikan `position: absolute;`, `top: 0;` dan `left: 0`</h2>
+    <div class="container-1">
+        <div class="container-2">
+            <div class="kotak1 margin-auto">1</div>
+            <div class="kotak2 margin-auto position-absolute-1 top-zero">2</div>
+            <div class="kotak3 margin-auto">3</div>
+        </div>
+    </div>
+
+    <h4>Pertanyaan</h4>
+    <ul>
+        <li>mengapakah ketika memberikan fungsi `top: 0;` dan `left: 0` bagi kotak2 di dalam container-2 itu iaitu warna biru, kotak2 itu keluar dari container-2 itu (parent-nya) </li>
+    </ul>
+
+    <h4>Penerangan</h4>
+    <ul>
+        <li>Jadi di sini ia terjadi kerana kotak2 itu naik 1 dimensi</li>
+    </ul>
+
+    <h4>Cara menyelesaikan</h4>
+    <ul>
+        <li>menggunakan fungsi `position: relative` bagi membuat container-2 iaitu parent-nya, supaya kotak2 dan container-2 itu sama-sama 1 dimensi yang sama</li>
+    </ul>
+
+
+<!-- 3 -->
+
+    <br><br>
+    <h2>Contoh lain:</h2>
+    <h2>Ketika memberikan `position: absolute;`, `top: 0;` dan `left: 0`</h2>
+    <h2>Serta juga bagi container-2 menggunakan fungsi `position: relative`</h2>
+    <div class="container-1">
+        <div class="container-2 position-relative">
+            <div class="kotak1 margin-auto">1</div>
+            <div class="kotak2 margin-auto position-absolute-1 top-zero">2</div>
+            <div class="kotak3 margin-auto">3</div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+        }
+
+        .satu {
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+            overflow: auto;
+        }
+
+        .dua {
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+            overflow: hidden;
+        }
+
+        .tiga {
+            background-color: greenyellow;
+            overflow: scroll;
+        }
+
+        .empat {
+            background-color: greenyellow;
+            overflow: scroll;
+        }
+
+        .lima {
+            background-color: greenyellow;
+            overflow: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Ketika elemen di dalamnya melebihi ukuran pembungkusnya</h1>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, eius dolor provident consectetur
+        repellat eos perspiciatis tempore excepturi. Mollitia eos inventore laudantium illum totam. Quaerat laudantium
+        corporis saepe vero a?
+        Modi, quidem saepe. Animi tenetur commodi, quisquam rerum illum, dolorum odit voluptatibus velit, quis sequi ab
+        autem eveniet facilis ipsum deserunt corrupti eius quam nobis? Illum excepturi quidem est ipsam?
+        Odio velit aperiam labore delectus ipsam deserunt, alias sapiente nemo beatae. Repudiandae, ipsa quasi. Corporis
+        optio quas, molestiae similique maiores, possimus, error voluptatem nulla praesentium nemo iusto ab itaque
+        velit.!</div>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr>
+    <h1>Selepas menggunakan `overflow : auto`</h1>
+    <div class="satu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, eius dolor provident
+        consectetur
+        repellat eos perspiciatis tempore excepturi. Mollitia eos inventore laudantium illum totam. Quaerat laudantium
+        corporis saepe vero a?
+        Modi, quidem saepe. Animi tenetur commodi, quisquam rerum illum, dolorum odit voluptatibus velit, quis sequi ab
+        autem eveniet facilis ipsum deserunt corrupti eius quam nobis? Illum excepturi quidem est ipsam?
+        Odio velit aperiam labore delectus ipsam deserunt, alias sapiente nemo beatae. Repudiandae, ipsa quasi. Corporis
+        optio quas, molestiae similique maiores, possimus, error voluptatem nulla praesentium nemo iusto ab itaque
+        velit.!</div>
+
+    <h1>ketika kontenya tidak melebihi parentnya, tetapi mengguanakn `overflow: auto`</h1>
+    <div class="lima">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, eius dolor provident
+        consectetur
+        repellat eos perspiciatis tempore excepturi. Mollitia eos inventore laudantium illum totam. Quaerat laudantium
+    </div>
+
+    <h4>Tipe Overflow :</h4>
+    <ul>
+        <li>visible - value default nya</li>
+        <li>auto - menambahkan scroll ketika elemenya melebihi ukuran parentnya</li>
+        <li>hidden</li>
+        <li>scroll</li>
+    </ul>
+
+    <hr>
+    <h1>Selepas menggunakan `overflow : hidden`</h1>
+    <div class="dua">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, eius dolor provident
+        consectetur
+        repellat eos perspiciatis tempore excepturi. Mollitia eos inventore laudantium illum totam. Quaerat laudantium
+        corporis saepe vero a?
+        Modi, quidem saepe. Animi tenetur commodi, quisquam rerum illum, dolorum odit voluptatibus velit, quis sequi ab
+        autem eveniet facilis ipsum deserunt corrupti eius quam nobis? Illum excepturi quidem est ipsam?
+        Odio velit aperiam labore delectus ipsam deserunt, alias sapiente nemo beatae. Repudiandae, ipsa quasi. Corporis
+        optio quas, molestiae similique maiores, possimus, error voluptatem nulla praesentium nemo iusto ab itaque
+        velit.!</div>
+    <h4>penerangan: </h4>
+    <p>kontenya akan disembunyikan jika melebih ukuran parentnya</p>
+
+    <hr>
+    <h1>Selepas menggunakan `overflow : scroll`</h1>
+    <div class="tiga">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, eius dolor provident
+        consectetur
+        repellat eos perspiciatis tempore excepturi. Mollitia eos inventore laudantium illum totam. Quaerat laudantium
+        corporis saepe vero a?
+        Modi, quidem saepe. Animi tenetur commodi, quisquam rerum illum, dolorum odit voluptatibus velit, quis sequi ab
+        autem eveniet facilis ipsum deserunt corrupti eius quam nobis? Illum excepturi quidem est ipsam?
+        Odio velit aperiam labore delectus ipsam deserunt, alias sapiente nemo beatae. Repudiandae, ipsa quasi. Corporis
+        optio quas, molestiae similique maiores, possimus, error voluptatem nulla praesentium nemo iusto ab itaque
+        velit.!</div>
+
+    <br>
+    <h1>ketika kontenya tidak melebihi parentnya, tetapi mengguanakn `overflow: scroll`</h1>
+    <div class="empat">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, eius dolor provident
+        consectetur
+        repellat eos perspiciatis tempore excepturi. Mollitia eos inventore laudantium illum totam. Quaerat laudantium
+    </div>
+
+
+</body>
+
+</html>

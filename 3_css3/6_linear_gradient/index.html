@@ -1,0 +1,125 @@
+<!-- gradients merupakan teknik untuk memberikan warna gradasi pada elemen yang kita punya -->
+<!-- terdapat 2 tipe gradients: -->
+<!-- 1. linear - gradient - memberikan warna secara garis lurus-->
+<!-- 2. radial-gradient - memberikan warna secara melingkar-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Gradient</title>
+
+    <style>
+
+        .linear-1 {
+
+            width: 600px;
+            height: 300px;
+            margin: 50px auto;
+            background-color: salmon;
+            background-image: linear-gradient(red, green);
+
+        }
+
+        .linear-2 {
+
+            width: 600px;
+            height: 300px;
+            margin: 50px auto;
+            background-color: salmon;
+            background-image: linear-gradient(red, #f0d606, rgba(255,255,0,1), green);
+
+        }
+
+        .deg {
+
+            width: 600px;
+            height: 300px;
+            margin: 50px auto;
+            background-color: salmon;
+            background-image: linear-gradient(90deg, red, green);
+
+        }
+
+        .arah {
+
+            width: 600px;
+            height: 300px;
+            margin: 50px auto;
+            background-color: salmon;
+            background-image: linear-gradient(to left, red, green);
+
+        }
+
+        .color-stop {
+
+            width: 600px;
+            height: 300px;
+            margin: 50px auto;
+            background-color: salmon;
+            background-image: linear-gradient(to left, red 63%, green 80%);
+
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h4>Hal yang anda perlu tahu linear-gradient</h4>
+    <ul>
+        <li>bukan property css3</li>
+        <li>melainkan value untuk background-image</li>
+        <li><span style="color: red; font-size: larger; font-weight: bold;">background-image: linear-gradient( {warna awal}, {warna akhir} );</span></li>
+    </ul>
+
+    <br><br><br><br><br>
+    <h1>contoh penggunaan `linear-gradient`</h1>
+    <div class="linear-1"></div>
+
+    <br><br><br><br><br>
+    <h1>multiple warna</h1>
+    <h4>
+        <ul>
+            <li>background-image: linear-gradient( {warna awal}, <span style="color: red;">{warna-2}</span>, <span style="color: green; font-size: 40px;">...</span>, {warna akhir} );</li>
+        </ul>
+    </h4>
+    <div class="linear-2"></div>
+
+    <br><br><br><br><br>
+    <h1>Mengguakan sintaks lengkap</h1>
+    <ul>
+        <li>background: linear-gradient( {sudut} atau {arah}, {warna awal}, {warna akhir} )</li>
+    </ul>
+
+    <br><br><br><br><br>
+    <h1>Memberikan sudut 90 darjah</h1>
+    <div class="deg"></div>
+
+    <br><br><br><br><br>
+    <h1>contoh penggunaan arah</h1>
+    <h4>arah</h4>
+    <ul>
+        <li>to bottom</li>
+        <li>to top</li>
+        <li>to left</li>
+        <li>to right</li>
+    </ul>
+
+    <h4>arah diagonal</h4>
+    <ul>
+        <li>to left top</li>
+        <li>to left bottom</li>
+        <li>to right top</li>
+        <li>to right bottom</li>
+    </ul>
+
+    <div class="arah"></div>
+
+    <br><br><br><br><br>
+    <h1>Penggunaa color stop</h1>
+    <div class="color-stop"></div>
+
+</body>
+</html>

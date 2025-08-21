@@ -1,0 +1,100 @@
+/* Cara menghentikan / membersihkan float */
+/* menggunakan property overflow */
+/* menggunakan <div> kosong */
+/* menggunakan teknik micro clearfix */
+
+/* jika float nya left maka harus menggunakan clear left bersama dengan div kosong */
+/* jika float nya right maka harus mengguankan clear right bersama dengan div kosong*/
+/* jika float nya left dan right maka kedua-duanya harus mengguanakn clear both */
+
+.container-1 {
+    width: 600px;
+    border: 1px solid black;
+    margin: auto;
+    padding: 5px;
+}
+
+.img-overflow-auto {
+    overflow: auto;
+}
+
+.clear-left {
+    clear: left;
+}
+
+.container {
+    margin: auto;
+    width: 800px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.kiri {
+    width: 150px;
+    height: 500px;
+    background-color: salmon;
+    float: left;
+}
+
+.tengah {
+    width: 500px;
+    height: 500px;
+    background-color: lightskyblue;
+    float: left;
+}
+
+.kanan {
+    width: 150px;
+    height: 500px;
+    background-color: lawngreen;
+    float: left;
+}
+
+.text-wrapping-left {
+    float: left;
+    margin: 5px;
+}
+
+.kotak {
+    width: 80px;
+    height: 80px;
+    color: white;
+    background-color: salmon;
+    text-align: center;
+    line-height: 80px;
+    font-size: 30px;
+    margin: 5px;
+}
+
+.galari-float-left {
+    float: left;
+}
+
+/* Micro Clearfix */
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     zoom: 1;
+ }

@@ -1,0 +1,30 @@
+div {
+    width: 200px;
+    height: 200px;
+}
+
+/* posisi default kotak */
+
+.kotak1 {
+    background-color: lightgreen;
+}
+
+.kotak2 {
+    background-color: violet;
+}
+
+.kotak3 {
+    background-color: gold;
+}
+
+/* 1 */
+
+.position-absolute {
+    position: absolute;
+}
+
+/* 2 */
+
+.margin-left {
+    margin-left: 50px;
+}

@@ -1,0 +1,11 @@
+
+
+.container {
+    width: 50vw;
+    background-color: #333;
+    font-family: monospace;
+    text-align: center;
+    margin: auto;
+
+    color: white;
+}

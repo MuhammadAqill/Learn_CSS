@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+
+    <style>
+        h2 {
+            margin: 100px auto 0;
+        }
+        .sebelum {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            margin: auto;
+        }
+        .selepas {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            margin: 150px auto 20px;
+            transform: scale(2);
+        }
+        .use-hover {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            margin: 100px auto 20px;
+        }
+        .use-hover:hover {
+            transform: scale(2);
+        }
+        .transition{
+            transition: 1s;
+        }
+        .sumbu:hover {
+            transform: scale(2, 0.5);
+        }
+        .rotate-45-positif:hover {
+            transform: rotate(45deg);
+        }
+        .rotate-45-negetif:hover {
+            transform: rotate(-45deg);
+        }
+        .rotate-x-vertikal-positif:hover {
+            transform: rotateX(180deg);
+        }
+        .rotate-y-horizontal-positif:hover {
+            transform: rotateY(180deg);
+        }
+        .rotate-multiple:hover {
+            transform: rotate(180deg) rotateX(180deg) rotateY(180deg);
+        }
+        .skew-30-positif:hover {
+            transform: skew(30deg);
+        }
+        .skew-30-x-positif:hover {
+            transform: skewX(30deg);
+        }
+        .skew-30-y-positif:hover {
+            transform: skewY(30deg);
+        }
+        .translate-50:hover {
+            transform: translate(50px); 
+        }
+        .translate-x-y:hover {
+            transform: translate(80px, 50px);
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Properti <span style="font-weight: bold;">Transform </span>Digunakan Untuk <span> Memanipulasi Format Visual Dari Elemen HTML</h1>
+    <h4>cara penulisan</h4>
+    <ul>
+        <li>transform: {fungsi} </li>
+        <li>fungsi:-</li>
+        <ul>
+            <li>scale - memperbesarkan / memperkecilkan</li>
+            <ul>
+                <li>scale(angka)</li>
+                <li>scaleX(angka)</li>
+                <li>scaleY(angka)</li>
+            </ul>
+            <li>rotate</li>
+            <ul>
+                <li>rotate(deg)</li>
+                <li>rotateX(deg)</li>
+                <li>rotateY(deg)</li>
+            </ul>
+            <li>skew - membuat condong / miring</li>
+            <ul>
+                <li>skew(deg)</li>
+                <li>skewX(deg)</li>
+                <li>skewY(deg)</li>
+            </ul>
+            <li>translate - mengubah posisi</li>
+            <ul>
+                <li>translate(translate)</li>
+                <li>translateX(translate)</li>
+                <li>translateY(translate)</li>
+            </ul>
+        </ul>
+    </ul>
+
+    <h2>Sebelum memberikan transform</h2>
+    <div class="sebelum"></div>
+    <br><br><br><br><br><br>
+
+    <h2>Selepas memberikan transform</h2>
+    <div class="selepas"></div>
+    <br><br><br><br><br>
+    <ul>
+        <li>Mengapa ia menjadi besar, ini kerana saya memberikan angka <span style="color: red;">2 pada transform</span>, maka ia akan menjadi <span style="color: red;">2 kali ganda besar</span>, jika <span style="color: red;">3,4,5,...,</span> maka ia akan menjadi <span style="color: red;">berganda dari angka yang diberikan</span></li>
+    </ul>
+
+    <h2>Mnggunakan hover</h2>
+    <h4>info:</h4>
+    <ul>
+        <li>Sebenarnya transform itu digunakan untuk hover</li>
+    </ul>
+    <div class="use-hover"></div>
+
+    <h2>Menggunakan Transition</h2>
+    <div class="use-hover transition"></div>
+    <h4>Penerangan
+        <ul>
+            <li>ketika di hover mouse ke kotak ia akan menjadi 2 kali ganda besar dikeranakan saya set tranform: scale(2);</li>
+        </ul>
+    </h4>
+
+    <h2>Menambahkan Sumbu-x & Sumbu-y</h2>
+    <div class="use-hover transition sumbu"></div>
+
+    <h2>Menggunakan `rotate:45deg` searah jarum jam</h2>
+    <div class="use-hover transition rotate-45-positif"></div>
+
+    <h2>Menggunakan `rotate:-45deg` berlawanan jarum jam</h2>
+    <div class="use-hover transition rotate-45-negetif"></div>
+
+    <h2>Menggunakan `rotateX:90deg` pada Sumbu-x</h2>
+    <div class="use-hover transition rotate-x-vertikal-positif"></div>
+    <h4>info
+        <ul>
+            <li>Jika menggunakan sumbu-x, maka sumbu itu posisinya <span style="color: red;">vertikal</span> bukan posisinya di <span style="color: red;">tengah</span></li>
+        </ul>
+    </h4>
+
+    <h2>Menggunakan `rotateY:90deg` pada Sumbu-x</h2>
+    <div class="use-hover transition rotate-y-horizontal-positif"></div>
+    <h4>info
+        <ul>
+            <li>Jika menggunakan sumbu-y, maka sumbu itu posisinya <span style="color: red;">horizontal</span> bukan posisinya di <span style="color: red;">tengah</span></li>
+        </ul>
+    </h4>
+
+    <h2>Menambahkan lebih dari satu transformasi</h2>
+    <div class="use-hover transition rotate-multiple"></div>
+    <h4>info
+        <ul>
+            <li>Di sini saya menggunakan `transform: rotate(180deg) rotateX(180deg) rotateY(180deg);`</li>
+        </ul>
+    </h4>
+
+    <h2>Menggunakan fungsi `skew` untuk membuat box menjadi miring</h2>
+    <div class="use-hover transition skew-30-positif"></div>
+    <h4>info
+        <ul>
+            <li>posisinya secara horizontal</li>
+        </ul>
+    </h4>
+
+    <h2>Menggunakan fungsi `skew-x` untuk membuat box menjadi miring</h2>
+    <div class="use-hover transition skew-30-x-positif"></div>
+    <h4>info
+        <ul>
+            <li>mengapakah ia tidak ada perbezaan?, ini kerana <span style="color: red;">skew=skewX</span></li>
+        </ul>
+    </h4>
+
+    <h2>Menggunakan fungsi `skew-y` untuk membuat box menjadi miring</h2>
+    <div class="use-hover transition skew-30-y-positif"></div>
+    <h4>info
+        <ul>
+            <li>posisinya secara vertikal</li>
+        </ul>
+    </h4>
+
+    <h2>Menggunakan fungsi `translate` untuk membuat box bergeser</h2>
+    <div class="use-hover transition translate-50"></div>
+    <h4>info
+        <ul>
+            <li>posisinya bergerak sebanyak 50px</li>
+        </ul>
+    </h4>
+
+    <h2>Menambahkan x dan y</h2>
+    <div class="use-hover transition translate-x-y"></div>
+    <h4>info
+        <ul>
+            <li>jadi di sini ia akan bergerak ke kanan atau x 80px, dan ke kebawah y 50px</li>
+        </ul>
+    </h4>
+
+
+</body>
+</html>

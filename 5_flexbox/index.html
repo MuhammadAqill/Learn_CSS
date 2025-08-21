@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Flex Box</title>
+</head>
+<body>
+    <h2>sebelum menggunakan 'display: flex'</h2>
+    <div class="container-1">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+    </div>
+    <ul>
+        <li>memerlukan clear fix pada code</li>
+        <li>memerlukan penulisan code yang sangat panjang</li>
+    </ul>
+    <h2>selepas menggunakan 'display: flex'</h2>
+    <div class="container-2 display-flex">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+    </div>
+    <ul>
+        <li>tidak memerlukan clear fix</li>
+        <li>walaupun tidak ada perbezaan, tetapi ini sangat membantu dalam penulisan code yang simple</li>
+    </ul>
+    <h4>info</h4>
+    <ul>
+        <li>harus memeberikan 'display: flex' pada container-2 dahulu (parentnya | pembungkusnya)</li>
+    </ul>
+    <hr>
+    <img src="flex-direction.png" alt="flex-direction">
+    <ul>
+        <li>mengatur arah dari urutan elemen2 di dalamnya</li>
+        <li>mengatur secara horizontal atau kebalikannya</li>
+        <li>mengatur secara vertikal atau kebalikannya</li>
+    </ul>
+    <h4>syntax</h4>
+    <ul>
+        <li>.container {flex-direction: row | row-reverse | column | column-reverse;}</li>
+    </ul>
+    <hr>
+    <h2>menggunakan 'flex-direction: row-reverse'</h2>
+    <div class="container-2 display-flex row-reverse">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+    </div>
+    <h2>menggunakan 'flex-direction: column-reverse'</h2>
+    <div class="container-2 display-flex column-reverse">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+    </div>
+    <hr>
+    <h2>flex-wrap</h2>
+    <img src="flex-wrap.png" alt="flex-wrap">
+    <ul>
+        <li>secara default, semua items di dalam container akan berada pada satu baris meskupun ukurannya sudah tidak cukup, wrap memungkinkan untuk memindahkan items ke baris di bawahnya</li>
+        <li>ketika elemen di dalam container tidak muat, maka ia akan membawa elemen itu kebawah</li>
+    </ul>
+    <h4>syntax</h4>
+    <ul>
+        <li>.container {flex-wrap: nowrap | wrap | wrap-reverse}</li>
+    </ul>
+    <hr>
+    <h2>menambah elemen 5</h2>
+    <div class="container-2 display-flex">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+        <div class="empat">5</div>
+    </div>
+    <ul>
+        <li>membuatkan elemen yang ada dibelkangnya bergeser</li>
+        <li>membuatkan ukuran elemen yang awalnya 120px menjadi 112.075px</li>
+    </ul>
+    <h4>info: anda boleh ukuran elemen di inspect di '.div container-2'</h4>
+    <h2>menggunaakn 'flex-wrap: wrap' bagi menyelesaikan masalah diatas</h2>
+    <div class="container-2 display-flex wrap">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+        <div class="empat">5</div>
+    </div>
+    <h2>menggunaakn 'flex-wrap: wrap-reverse' bagi menyelesaikan masalah diatas</h2>
+    <div class="container-2 display-flex wrap-reverse">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+        <div class="empat">5</div>
+    </div>
+    <hr>
+    <img src="justify-content.png" alt="justify-content">
+    <h4>syntax</h4>
+    <ul>
+        <li>.container {justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly}</li>
+    </ul>
+    <hr>
+    <h2>menggunaakn 'justify-content: flex-start'</h2>
+    <div class="container-2 display-flex flex-start">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+    </div>
+    <h2>menggunaakn 'justify-content: flex-end'</h2>
+    <div class="container-2 display-flex flex-end">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+    </div>
+    <h2>menggunaakn 'justify-content: center'</h2>
+    <div class="container-2 display-flex center">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+    </div>
+    <h2>menggunaakn 'justify-content: space-between'</h2>
+    <div class="container-2 display-flex space-between">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+    </div>
+    <h2>menggunaakn 'justify-content: space-around'</h2>
+    <div class="container-2 display-flex space-around">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+    </div>
+    <h2>menggunaakn 'justify-content: space-evenly'</h2>
+    <div class="container-2 display-flex space-evenly">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+    </div>
+    <hr>
+    <img src="align-items.png" alt="align-items">
+    <ul>
+        <li>mengatur kesejejaran text di dalam items secara horizontal</li>
+    </ul>
+    <h4>syntax</h4>
+    <ul>
+        <li>.container {align-items: flex-start | flex-end | center | stretch | baseline}</li>
+    </ul>
+    <hr>
+    <h2>menggunaakn 'align-items: flex-start'</h2>
+    <div class="container-3 display-flex flex-start">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+    </div>
+    <h2>menggunaakn 'align-items: flex-end'</h2>
+    <div class="container-3 display-flex flex-end">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+    </div>
+    <h2>menggunaakn 'align-items: center'</h2>
+    <div class="container-3 display-flex items-center">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+    </div>
+    <h2>menggunaakn 'align-items: stretch'</h2>
+    <div class="container-3 display-flex stretch">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+    </div>
+    <h2>sebelum 'align-items: baseline'</h2>
+    <div class="container-3 display-flex stretch">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+    </div>
+    <ul>
+        <li>tidak sejajar tulisan di dalamnya</li>
+    </ul>
+    <h2>selepas 'align-items: baseline'</h2>
+    <div class="container-3 display-flex baseline">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+    </div>
+    <ul>
+        <li>sejajar tulisan di dalamnya</li>
+    </ul>
+    <hr>
+    <img src="align-content.png" alt="align-content">
+    <h4>syntax</h4>
+    <ul>
+        <li>.container {align-content: flex-start | flex-end | center | space-between | space-around}</li>
+    </ul>
+    <h4>definisi</h4>
+    <ul>
+        <li>untuk mengatur jarak antara items terhadap cross axis</li>
+        <li>hanya berfungsi ketika items lebih dari satu baris</li>
+    </ul>
+    <hr>
+    <h2>menggunakan 'align-content: flex-start'</h2>
+    <div class="container-4 display-flex wrap align-content-flex-start">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+        <div class="lima">5</div>
+        <div class="enam">6</div>
+        <div class="tujuh">7</div>
+        <div class="lapan">8</div>
+    </div>
+    <h2>menggunakan 'align-content: center'</h2>
+    <div class="container-4 display-flex wrap align-content-center">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+        <div class="lima">5</div>
+        <div class="enam">6</div>
+        <div class="tujuh">7</div>
+        <div class="lapan">8</div>
+    </div>
+    <h2>menggunakan 'align-content: space-between'</h2>
+    <div class="container-4 display-flex wrap align-content-space-between">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+        <div class="lima">5</div>
+        <div class="enam">6</div>
+        <div class="tujuh">7</div>
+        <div class="lapan">8</div>
+        
+    </div>
+    <h2>menggunakan 'align-content: flex-end'</h2>
+    <div class="container-4 display-flex wrap align-content-flex-end">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+        <div class="lima">5</div>
+        <div class="enam">6</div>
+        <div class="tujuh">7</div>
+        <div class="lapan">8</div>
+    </div>
+    <h2>menggunakan 'align-content: stretch'</h2>
+    <div class="container-4 display-flex wrap align-content-stretch">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+        <div class="lima">5</div>
+        <div class="enam">6</div>
+        <div class="tujuh">7</div>
+        <div class="lapan">8</div>
+    </div>
+    <h2>menggunakan 'align-content: space-around'</h2>
+    <div class="container-4 display-flex wrap align-content-space-around">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+        <div class="lima">5</div>
+        <div class="enam">6</div>
+        <div class="tujuh">7</div>
+        <div class="lapan">8</div>
+        <div class="tujuh">7</div>
+        <div class="lapan">8</div>
+    </div>
+    <hr>
+    <h1>property pada items</h1>
+    <h4>syntax : 'order: number'</h4>
+    <h4>property</h4>
+    <ul>
+        <li>order - mengatur urutan dari elemen</li>
+    </ul>
+    <h2>menggunakan 'order: 3' pada 'satu'</h2>
+    <div class="container-2 display-flex">
+        <div class="satu order-1">1</div>
+        <div class="dua order-2">2</div>
+        <div class="tiga order-3">3</div>
+        <div class="empat order-4">4</div>
+    </div>
+    <h4>peringatan</h4>
+    <ul>
+        <li>jika hanya satu item saja yang diberikan order maka ia akan terus ke posisi paling kanan kerana dianggap kosong</li>
+        <li>harus memberikan order pada kesemua item</li>
+    </ul>
+    <hr>
+    <h1>flex-grow</h1>
+    <h4>syntax : 'flex-grow: number'</h4>
+    <ul>
+        <li>mengatur ukuran dari si itemnya</li>
+    </ul>
+    <h2>menggunakan 'flex-grow: 1' pada item 'dua'</h2>
+    <div class="container-2 display-flex">
+        <div class="satu">1</div>
+        <div class="dua flex-grow">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+    </div>
+    <hr>
+    <h1>align-self</h1>
+    <img src="align-self.png" alt="align-self">
+    <h4>syntax</h4>
+    <ul>
+        <li>align-self: auto | flex-start | flex-end | center | baseline | stretch</li>
+    </ul>
+    <h4>definisi</h4>
+    <ul>
+        <li>mengatur perilaku penjajaran sebuah item yang spesifi terhadap cross axis</li>
+    </ul>
+</body>
+</html>
+
+<!-- 
+
+    1. .container {display: flex | inline-flex}
+        - Membuat sebuah elemen parent menjadi flex box, dan membuat elemen-elemn
+          di dalamnya bisa berperilaku flex juga
+
+-->

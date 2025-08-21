@@ -1,0 +1,113 @@
+<!-- tag pada HTML digunakan untuk memberikan 'maksud atau 'arti' pada sebuah konten (p untuk paragraf, h1 untuk heading utam, dll) -->
+<!-- Tag <div> dan <span> tidak memiliki 'arti' apapun, keduanya digunakan untuk mengelompokkan tag-tag HTML dan memberikan informasi terhadap tag-tag tersebut -->
+
+<!-- div - default displaynya adalah block, dan span default displaynya adalah inline -->
+
+<!-- display :- -->
+<!-- inline - elemen HTML yang secara default tidak menambahkan baris baru ketika dibuat
+            - lebar dan tinggi elemennya sebesar konted yang ada di dalamnya
+            - kita tidak dapat mengatur tinggi dan lebar dari elemen inline
+            - margin dan padding hanya mempengaruhi elemen secara horizontal, tidak vertikal
+
+            - elemen inline :
+                - <span></span>
+                - b, strong, i, em
+                - a, span, sub, sup,
+                - button, input, label,
+                - select, textarea -->
+
+<!-- inline-block -->
+
+<!-- block 
+    - elemen block:
+        - <div></div> 
+-->
+
+<!-- none -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div & span</title>
+
+    <style>
+        a {
+            /* lebar dan tinggi elemennya sebesar konted yang ada di dalamnya */
+            background-color: pink;
+            /* walaupun kita sudah memberi width dan height, ia tetap tidak akan berpengaruh, kita tidak dapat mengatur tinggi dan lebar dari elemen inline */
+            width: 200px;
+            height: 200px;
+        }
+
+        /* hanya image saja yang kita bisa atur width dan heightnya walan pun defaultnya display: inline */
+        .selepas {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Selamat Datang Di Website Kami</h1>
+    </div>
+
+    <!-- lebar dan tinggi elemennya sebesar konten yang ada di dalamnya -->
+    <div class="navigasi">
+        <hr>
+        <h2>in adalah inline [tag a]: Lebar dan tinggi elemennya sebesar konten yang ada di dalamnya</h2>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 5</a>
+        <a href="#">Link 6</a>
+        <hr>
+    </div>
+
+    <div class="main">
+        <h2>in adalah inline [tag img]: gambar sebelum diberikan width & height</h2>
+        <!-- hanya image saja yang kita bisa atur width dan heightnya walan pun defaultnya display: inline -->
+        <img src="logo.png" alt="">
+        <hr>
+
+        <h2>in adalah inline [tag img]: gambar selepas diberikan width & height</h2>
+        <!-- hanya image saja yang kita bisa atur width dan heightnya walan pun defaultnya display: inline -->
+        <img src="logo.png" alt="" class="selepas">
+        <br>
+        <p>penjelasan:</p>
+        <p>hanya image saja yang kita bisa atur width dan height nya walaupun defaultnya display: inline</p>
+        <hr>
+
+        <p><span>Lorem ipsum dolor sit amet</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores
+            quae expedita nisi. Magnam voluptatum
+            adipisci aliquam officiis tempore nobis, illum minus dolores libero velit delectus cumque quas cum, nostrum
+            veniam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus iure obcaecati sequi molestias
+            doloribus maxime, tempora dignissimos impedit perspiciatis iusto fugit nesciunt eius! Voluptates id
+            explicabo
+            cupiditate ex dolore tempora.
+            Eum id quisquam officiis hic perferendis placeat! Optio, enim maxime. Quis aperiam eaque ullam fugit tenetur
+            voluptatibus sunt eligendi veniam libero nemo consequuntur possimus doloribus molestias, consectetur
+            consequatur
+            eius necessitatibus.
+        </p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae dolor doloremque cumque sapiente quod nobis
+            itaque
+            cupiditate sequi corporis reiciendis, sunt facilis tempore, fuga iusto! Consectetur fugit nostrum esse ipsa!
+        </p>
+    </div>
+
+    <div class="copyright">
+        <p class="copyright">Copyright 2015, 4k1ra</p>
+    </div>
+</body>
+
+</html>

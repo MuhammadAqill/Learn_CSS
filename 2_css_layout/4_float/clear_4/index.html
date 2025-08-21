@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clear</title>
+<body>
+
+    <!-- Intro -->
+     <h1>Terdapat tiga cara menghentikan float</h1>
+     <ul>
+        <li>menggunakan property `overflow: auto`
+            <ul>
+                <li style="color: red;">bukan solusi yang tepat, tetapi ini cara ngakalin</li>
+            </ul>
+        </li>
+        <li>menggunakan div kosong</li>
+        <ul>
+            <li style="color: red;">kode tidak rapi</li>
+        </ul>
+        <li>menggunakan micro clearfix</li>
+        <ul>
+            <li style="color: red;">code lebih rapi tanpa div kosong</li>
+        </ul>
+     </ul>
+
+    <!-- overflow -->
+    <hr>
+    <h1>Sebelum membersihkan float menggunakn `overflow: auto`</h1>
+    <div class="container-1">
+        <img src="img/logo.png" alt="logo" class="text-wrapping-left">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <h1>Selepas membersihkan float menggunakn `overflow: auto`</h1>
+    <div class="container-1 img-overflow-auto">
+        <img src="img/logo.png" alt="logo" class="text-wrapping-left">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <ul>
+        <li>
+            <h4 style="color: red; font-family: Arial, Helvetica, sans-serif;">Sebenarnya ini bukan solusi yang tepat, tetapi ini cara ngakalin</h4>
+        </li>
+    </ul>
+
+    <!-- Div kosong -->
+
+    <hr>
+    <h1>Menggunakan fungsi `clear` dan tambahkan div kosong</h1>
+    <div class="container-1 img-clear-left">
+        <img src="img/logo.png" alt="logo">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+        <!-- div kosong -->
+        <div class="clear-left"></div>
+    </div>
+
+    <ul>
+        <li>
+            <h4 style="color: red; font-family: Arial, Helvetica, sans-serif;">cara kedua yang betul, tetapi kode tidak kemas, sebainya mengguanakn micro clearfix</h4>
+        </li>
+    </ul>
+
+    <!-- Div kosong -->
+
+    <h1>Sebelum menggunakan fungsi `clear` dan div kosong</h1>
+    <div class="container">
+        <div class="kotak galari-float-left">1</div>
+        <div class="kotak galari-float-left">2</div>
+        <div class="kotak galari-float-left">3</div>
+        <div class="kotak galari-float-left">4</div>
+        <div class="kotak galari-float-left">5</div>
+        <div class="kotak galari-float-left">6</div>
+        <div class="kotak galari-float-left">7</div>
+        <div class="kotak galari-float-left">8</div>
+        <div class="kotak galari-float-left">9</div>
+        <div class="kotak galari-float-left">10</div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus ea esse illo iusto fugit, sequi delectus, veritatis quasi minus dignissimos cumque expedita odio in ratione qui distinctio explicabo aspernatur neque.</p>
+    </div>
+
+    <h1>Selepas menggunakan fungsi `clear` dan div kosong</h1>
+    <div class="container">
+        <div class="kotak galari-float-left">1</div>
+        <div class="kotak galari-float-left">2</div>
+        <div class="kotak galari-float-left">3</div>
+        <div class="kotak galari-float-left">4</div>
+        <div class="kotak galari-float-left">5</div>
+        <div class="kotak galari-float-left">6</div>
+        <div class="kotak galari-float-left">7</div>
+        <div class="kotak galari-float-left">8</div>
+        <div class="kotak galari-float-left">9</div>
+        <div class="kotak galari-float-left">10</div>
+
+        <!-- div kosong -->
+        <div class="clear-left"></div>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus ea esse illo iusto fugit, sequi delectus, veritatis quasi minus dignissimos cumque expedita odio in ratione qui distinctio explicabo aspernatur neque.</p>
+    </div>
+
+    <ul>
+        <li>
+            <h4 style="color: red; font-family: Arial, Helvetica, sans-serif;">pastikan meletakk div kosong</h4>
+        </li>
+    </ul>
+
+    <!-- Div kosong -->
+     
+    <hr>
+    <h1>Sebelum</h1>
+    <div class="container">
+        <div class="kiri"></div>
+        <div class="tengah"></div>
+        <div class="kanan"></div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h1>Selepas</h1>
+    <div class="container">
+        <div class="kiri"></div>
+        <div class="tengah"></div>
+        <div class="kanan"></div>
+
+        <!-- div kosong -->
+         <div class="clear-left"></div>
+
+    </div>
+
+
+    <!-- Micro Clearfix -->
+    <br><br><br><br><br><br><br>
+    <hr>
+    <h1>Menggunakan Micro Clearfix</h1>
+    <div class="container cf">
+        <div class="kiri"></div>
+        <div class="tengah"></div>
+        <div class="kanan"></div>
+    </div>
+
+    <ul>
+        <li>
+            <h4 style="color: red; font-family: Arial, Helvetica, sans-serif;">code lebih rapi tanpa menambahkan div kosong</h4>
+        </li>
+    </ul>
+
+
+</body>
+</html>

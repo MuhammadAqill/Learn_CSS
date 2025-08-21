@@ -1,0 +1,36 @@
+/* 1 */
+
+div {
+    height: 200px;
+    width: 200px;
+}
+
+.container-1 {
+    width: 600px;
+    height: 650px;
+    position: relative;
+    margin: auto;
+    border: 5px solid red;
+}
+
+.kotak1 {
+    background-color: lightgreen;
+}
+
+.kotak2 {
+    background-color: violet;
+}
+
+.kotak3 {
+    background-color: gold;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.position-fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+}

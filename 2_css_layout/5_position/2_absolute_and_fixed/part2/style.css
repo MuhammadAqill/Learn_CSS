@@ -1,0 +1,57 @@
+div {
+    width: 200px;
+    height: 200px;
+}
+
+/* 1 */
+
+.kotak1 {
+    background-color: lightgreen;
+}
+
+.kotak2 {
+    background-color: violet;
+}
+
+.kotak3 {
+    background-color: gold;
+}
+
+.position-absolute {
+    position: absolute;
+    top: 150px;
+}
+
+/* 2 */
+
+.container-1 {
+    width: 1500px;
+    height: 650px;
+    position: relative;
+    margin: auto;
+    border: 5px solid red;
+}
+
+.container-2 {
+    width: 1000px;
+    height: 600px;
+    margin: 25px auto;
+    border: 5px solid blue;
+    /* position: relative; */
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.top-zero {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 3 */
+
+.position-relative {
+    position: relative;
+}

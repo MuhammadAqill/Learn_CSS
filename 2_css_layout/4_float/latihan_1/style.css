@@ -1,0 +1,65 @@
+/* float merupakan properti pada  css untuk mengatur posisi sebuah elemen. Sebuah elemen dapat dipaksa untuk berada di di sebelah kiri atau kanan dari pembungkusnya
+ dengan menggunakan properti float */
+
+/* float */
+/* float: none; - default*/
+/* float: left; */
+/* float: right; */
+
+/* yang boleh dibuat menggunakan properti float */
+/* text wrapping - membuat teks mengelilingi gambar / elemen lain */
+/* image gallery - membuat serangkain gambar menjadi galer */
+/* multi-column layout - membuat halamn memiliki beberapa kolom */
+/* dll - dan masih banyak lagi */
+
+.satu {
+    background-color: salmon;
+    width: 100px;
+    height: 100px
+}
+
+.dua {
+    background-color: limegreen;
+    width: 100px;
+    height: 100px
+}
+
+.tiga {
+    background-color: lightskyblue;
+    width: 100px;
+    height: 100px
+}
+
+.out-dua {
+    float: left;
+}
+
+.geser-dua {
+    margin-left: 20px;
+}
+
+.bergerak-kanan, .container .bergerak-kanan {
+    float: right;
+}
+
+.container {
+    width: 600px;
+    border: 1px solid black;
+    margin: auto;
+    padding: 5px;
+}
+
+.satu-kotak, .dua-kotak, .tiga-kotak {
+    width: 100px;
+    height: 100px;
+}
+
+.text-wrapping-left {
+    float: left;
+    margin: 5px;
+}
+
+.text-wrapping-right {
+    float: right;
+    margin: 5px;
+}

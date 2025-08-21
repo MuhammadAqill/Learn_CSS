@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimensi</title>
+    <style>
+        .dimensi {
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+        }
+
+        .relatif-browser {
+            width: 100%;
+            height: 200px;
+            background-color: greenyellow;
+        }
+
+        .relatif-browser-50-persen {
+            width: 50%;
+            height: 200px;
+            background-color: greenyellow;
+        }
+
+        .pembungkus {
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+        }
+
+        .di-dalam-pembungkus-100-persen {
+            width: 100%;
+            background-color: aqua;
+        }
+
+        .di-dalam-pembungkus-80-persen {
+            width: 80%;
+            background-color: aqua;
+        }
+
+        .pembungkus-500px {
+            width: 500px;
+            height: 200px;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <hr>
+    <h1>Dimensi: widht dan height</h1>
+    <div class="dimensi">Hello World</div>
+
+    <hr>
+    <h1>Terdapat tiga satuan pada width & height</h1>
+    <ul>
+        <li>px - satuan yang absolute (nilainya pasti)</li>
+        <li>% - nilai yang relatif (relatif terhadap elemen parentnya atau pembungkusnya)</li>
+        <li>in, cm, mm, pt, pc - satuan yang diambil di dunia nyata</li>
+    </ul>
+
+    <hr>
+    <h1>100% : ukurannya relatif terhadap lebar browser</h1>
+    <div class="relatif-browser">
+        Hello World
+    </div>
+
+    <hr>
+    <h1>50% : ukurannya relatif terhadap lebar 50% browser</h1>
+    <div class="relatif-browser-50-persen">
+        Hello World
+    </div>
+
+    <hr>
+    <div class="pembungkus">
+        <div class="di-dalam-pembungkus-100-persen">
+            100% relatif terhadap pembungkusnya ini
+        </div>
+    </div>
+
+    <br>
+    <div class="pembungkus">
+        <div class="di-dalam-pembungkus-80-persen">
+            80% relatif terhadap pembungkusnya ini
+        </div>
+    </div>
+
+    <br>
+    <div class="pembungkus-500px">
+        <div class="di-dalam-pembungkus-80-persen">
+            80% relatif terhadap pembungkusnya ini
+        </div>
+    </div>
+
+</body>
+
+</html>

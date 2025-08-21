@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>absolute & fixed part3</title>
+</head>
+<body>
+    <hr>
+    <h2 style="text-align: center;">TOPIC 3 : POSITION FIXED</h2>
+    <ul>
+        <li>ketika kita menggerakkan elemen tersebut dengan top, left, bottom dan right, maka ia akan selalu bergerak relative terhadap windows browser</li>
+        <li>ia tidak mempedulikan elemen parent-nya meskipun parent-nya sudah diberikan position relative</li>
+    </ul>
+    <hr>
+    <br>
+
+
+<!-- 1 -->
+
+    <h2>Sebelum memberikan positon absolute, top:0, dan left:0 di kotak 2</h2>
+    <div class="container">
+        <div class="kotak1 margin-auto">1</div>
+        <div class="kotak2 margin-auto">2</div>
+        <div class="kotak3 margin-auto">3</div>
+    </div>
+
+    <br><br><br><br><br>
+    <hr>
+
+<!-- 2 -->
+
+    <h2>Selepas memberikan positon absolute, top:0, dan left:0 di kotak 2</h2>
+    <div class="container">
+        <div class="kotak1 margin-auto">1</div>
+        <div class="kotak2 margin-auto position-absolute">2</div>
+        <div class="kotak3 margin-auto">3</div>
+    </div>
+
+    <h4>Info</h4>
+    <ul>
+        <li style="color: red;">kotak2 pink yang berada di sebelah kiri itu untuk selepas</li>
+    </ul>
+
+    <h4>Pertanyaan</h4>
+    <ul>
+        <li>menapakah ia berada di luar containernya?. ini kerana kotak2 itu berada di dimensi yang berbeda dari containernya</li>
+        <li>Untuk membuat kotak2 itu berada di dalam container alias parentnya kita haru memberikan `position: relative`, supaya berada di posisi yang sama</li>
+    </ul>
+
+    <br><br><br><br><br><br><br>
+    <hr>
+
+<!-- 3 -->
+
+    <h2>Selepas memberikan `position: relative` ke container</h2>
+    <div class="position-relative container">
+        <div class="kotak1 margin-auto">1</div>
+        <div class="kotak2 margin-auto position-absolute">2</div>
+        <div class="kotak3 margin-auto">3</div>
+    </div>
+
+    <h4>Penerangan</h4>
+    <ul>
+        <li>Jadi di sini container berada di dalam dimensi yang sama dengan kotak2</li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition 2</title>
+
+    <style>
+
+        .ease {transition: 2s ease;}
+        .ease-in {transition: 2s ease-in;}
+        .ease-out {transition: 2s ease-out;}
+        .ease-in-out {transition: 2s ease-in-out;}
+        .linear {transition: 2s linear;}
+        .cubic-bezier {transition: 2s cubic-bezier(0.29, -0.43, 0.55, 1.14);}
+        .delay {transition: 2s 3s;}
+        .multiple {transition: margin-left 2s, transform 2s 3s, background-color 2s 3s}
+
+        .kotak-1 {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            text-align: center;
+            line-height: 100px;
+            margin: 5px 0;
+        }
+        .container:hover .kotak-1{
+            transform: rotate(180deg);
+            background-color: pink;
+            margin-left: 700px;
+        }
+        .container {
+            border: 5px solid black;
+            width: 800px;
+            margin: auto;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <h1>TRANSITION Part 2</h1>
+    <h3></h3>
+
+    <h4>Syntax:</h4>
+    <ul>
+        <li>transition: [property] {durasi} [fungsi] [delay];</li>
+        <li>fungsi</li>
+        <ul>timing function
+            <li>ease (default)</li>
+            <li>ease-in</li>
+            <li>ease-out</li>
+            <li>ease-in-out</li>
+            <li>linear</li>
+            <li>cubic-bezier(w,x,y,z)</li>
+        </ul>
+    </ul>
+
+    <h2>Contoh Pengunaan</h2>
+    <div class="container">
+        <div class="kotak-1 ease">ease</div>
+        <div class="kotak-1 ease-in">ease-in</div>
+        <div class="kotak-1 ease-out">ease-out</div>
+        <div class="kotak-1 ease-in-out">ease-in-out</div>
+        <div class="kotak-1 linear">linear</div>
+        <div class="kotak-1 cubic-bezier">cubic-bezier</div>
+        <div class="kotak-1 ease delay">delay 3s</div>
+        <div class="kotak-1 ease multiple">multiple</div>
+    </div>
+
+    <h4>Penerangan
+        <ul>
+            <li>awalnya perlahan, makin lama makin laju</li>
+        </ul>
+    </h4>
+
+</body>
+</html>

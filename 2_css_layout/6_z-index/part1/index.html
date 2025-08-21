@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>z-index</title>
+</head>
+<body>
+    <h2>Kedudukan default:</h2>
+    <br>
+    <div class="kotak1">1</div>
+    <div class="kotak2">2</div>
+    <div class="kotak3">3</div>
+
+
+<!-- 1 -->
+
+    <h2>Memberikan `positon absolute`:</h2>
+    <br>
+    <div class="container">
+        <div class="kotak1 positon-absolute">1</div>
+        <div class="kotak2 positon-absolute">2</div>
+        <div class="kotak3 positon-absolute">3</div>
+    </div>
+
+    <h4>Pertanyaan</h4>
+    <ul>
+        <li>mengapakah kotak3 berada paling atas?, bagaiman untuk mengatur posisi kotak?</li>
+    </ul>
+
+    <h4>Penerangan</h4>
+    <ul>
+        <li>kita dapat mengatur posisi kotak dengan menggunakan z-index</li>
+    </ul>
+    <br><br><br><br><br>
+
+
+<!-- 2 -->
+
+    <h2>Memperlihatkan kotak lain apabila digeserkan:</h2>
+    <br>
+    <div class="container">
+        <div class="kotak1 positon-absolute">1</div>
+        <div class="kotak2 positon-absolute top-left-1">2</div>
+        <div class="kotak3 positon-absolute top-left-2">3</div>
+    </div>
+    <br>
+
+
+<!-- 3 -->
+
+<h2>Mengatur Kedudukan kotak menggunakan z-index:</h2>
+<h3>sebagai contoh dibawah ini saya ingin kotak 1 di bahagian depan</h3>
+<br>
+<div class="container">
+    <div class="kotak1 positon-absolute z-kotak1">1</div>
+    <div class="kotak2 positon-absolute top-left-1">2</div>
+    <div class="kotak3 positon-absolute top-left-2">3</div>
+</div>
+
+</body>
+</html>

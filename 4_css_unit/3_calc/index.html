@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>CSS Calc</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calc()</h1>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsum natus, repellendus totam repellat iusto sit. Itaque odit laudantium, autem tempore sit commodi placeat, in ea accusamus sed, reprehenderit earum.</p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis consequatur inventore, cumque ab reprehenderit quidem officia nisi quaerat neque sint, quisquam vel vero recusandae officiis accusamus consequuntur non quia, saepe
+        delectus veniam ipsam sit! Magni nam exercitationem est eos illum, mollitia impedit nemo velit iste a et enim? Nam nesciunt temporibus dolorum eligendi ratione atque nihil cumque veniam culpa quo?
+      </p>
+      <img src="img/1.jpg" alt="desk-setup" class="full-size-img" />
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolores ullam, itaque sint, sapiente quam possimus consequatur asperiores porro eveniet distinctio, exercitationem vel saepe.</p>
+      <p class="highlight">"dolorum, fuga temporibus odio voluptates dicta, ad est. Perspiciatis repellendus beatae at, distinctio, voluptatem sint repellat culpa exercitationem, officia aspernatur asperiores."</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid hic accusantium odio expedita dignissimos vel sunt culpa numquam dolorem animi dolor aperiam debitis dolores eum nemo odit, aspernatur tempora molestiae minima
+        similique rem voluptates quis necessitatibus? Dolore voluptates reiciendis distinctio molestiae, eius quae cum fuga maiores quidem, ex repellat ad. Ducimus repellat neque sint magni accusantium? Et iusto beatae corrupti?
+      </p>
+    </div>
+  </body>
+</html>
+
+<!-- 
+
+    Calc():
+        - Fungsi pada CSS, yang memungkinkan kita untuk melakukan operasi matematika /kalkulasi pada nilai dari sebuah perperti
+    
+    Nilai yang bisa dikelola diantaranya:
+        - length
+        - angle
+        - time
+        - percentage
+        - number
+    
+    Syntax :
+        property: calc(expression);
+    
+    example :
+        margin : calc(px + px);
+
+    penjumlahan:
+        width: calc(10px + 100px);
+    Pengurangan:
+        width: calc(10px - 100px);
+
+    1.Syarat Perkalian:
+        valid:
+            margin: calc(10px * 3);
+        valid:
+            margin: calc(3 * 10px);
+        invalid:
+            margin: calc(30px * 3px);
+            - invalid kerana nilai yang ingin didarabnya mempunyai satuan. Seperti 30px*3px, harusnya 30px*3
+    
+    2.Syarat Spasi:
+        - harus ada spasi di antar nilai
+
+        valid:
+            font-size: calc(3vw + 2px);
+        valid:
+            font-size: calc(3vw - 2px);
+        invalid:
+            font-size: calc(3vw+2px);
+        invalid:
+            font-size: calc(3vw-2px);
+
+    3.Multiple Calc (Nesting)
+        width: calc(calc(100% / 3) - calc(1rem * 2));
+
+        atau
+
+        width: calc((100% / 3) - (1rem * 2));
+
+    4.Order of Operation:
+        width: calc(100% / 3 - 1rem * 2);
+
+    5.Menggunakan Variables atau Custom Properties:
+        
+        :root {
+            --header-height: 32px;
+        }
+
+        .el {
+            height: calc(100vh - var(--header-height));
+        }
+
+ -->

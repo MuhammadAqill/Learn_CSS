@@ -1,0 +1,116 @@
+<!-- setiap elemen di halaman berada di dalam sebuah box (kotak) -->
+<!-- kita bisa mengatur ukuran dan posisi kotak tersebut -->
+<!-- kita bisa memberi warna / gambar sebagai bacground kotak tersebut -->
+
+<!-- CSS box model mendefinisikan 'kotak' yang dihasilkan oleh sebuah elemen, lalu menampilkannya sesuai dengan format visualnya. -->
+
+<!-- CSS box model terdiri dar margin, border, padding, dan content -->
+
+<!-- margin - area transparan di sekitar kotak (di luar border) -->
+<!-- padding - area transparan di dalam kotak (antara content dan border) -->
+<!-- border - batas disekeliling content dan padding -->
+<!-- content - konten sebenarnya di dalam box, bisa brupa teks atau gambar -->
+
+<!-- properti untuk margin, padding & border -->
+<!-- margin-top, margin-right, margin-left, margin -->
+<!-- padding-top, padding-right, padding-bottom, padding-left, padding -->
+<!-- border-top, border-right, border-bottom, border-left, border -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Margin</title>
+</head>
+
+<body>
+    <h1>Overplaping margin (vertikal):</h1>
+    <div class="overlapver1">margin-bottom: 30px</div>
+    <div class="overlapver2">margin-top: 20px</div>
+    <h4>penerangan</h4>
+    <ul>
+        <li>overlapping margin merupakan sesuatu kondisi yang berlaku ketika kedua margin saling bertembung, kemudian ia
+            akan mebandingkan nilai margin mana yang paling besar untuk diambil.</li>
+        <li>bagi nilai margin yang kecil tidak akan diambil</li>
+        <br>
+    </ul>
+    <hr>
+
+    <h1>Overlaping margin (horizontal) ketika di berikan `display: inline-block`</h1>
+    <div class="inline">
+        <div class="overlapho1">1</div>
+        <div class="overlapho2">2</div>
+        <div class="overlapho3">3</div>
+    </div>
+    <br>
+
+    <hr>
+    <h1>menghilangkan jarak antara kotak1 > kotak3</h1>
+    <div class="inline">
+        <div class="overlapho1">1</div><div class="overlapho2">2</div><div class="overlapho3">3</div>
+    </div>
+
+    <h4>penerangan</h4>
+    <p>awalnya sepert ini : </p>
+    <pre>
+        &lt;div class="overlapho1"&gt;1&lt;/div&gt;
+        &lt;div class="overlapho2"&gt;2&lt;/div&gt;
+        &lt;div class="overlapho3"&gt;3&lt;/div&gt;
+    </pre>
+
+    <p>kemudian di ubah di html seperti ini:</p>
+    <code>
+        &lt;div class="overlapho1"&gt;1&lt;/div&gt;&lt;div class="overlapho2"&gt;2&lt;/div&gt;&lt;div class="overlapho3"&gt;3&lt;/div&gt;
+    </code>
+
+    <hr>
+    <h1>Overlaping margin(horizontal) :</h1>
+    <div class="inline margver">
+        <div class="overlapho1">30px</div><div class="overlapho2">20px</div><div class="overlapho3">0px</div>
+    </div>
+    <h4>Penerangan:</h4>
+    <ul>
+        <li>ia akan menjumlahkan margin left dan right, tidak sepert margin vertikal</li>
+        <li>hasil marginnya adalah 50px</li>
+    </ul>
+
+    <hr>
+    <h1>Sebelum diberikan overpaling(vertikal) negetif</h1>
+    <div class="overlapver1">margin-bottom: 30px</div>
+    <div class="overlapver2 sebelum-negetif">margin-top: 20px</div>
+    <div class="overlapver3">0px</div>
+
+    <br>
+    <h1>Selepas diberikan overplaping (vertikal) negetif `margin-top: -120px`</h1>
+    <div class="overlapver1">margin-bottom: 30px</div>
+    <div class="overlapver2 selepas-negetif">margin-top: -120px</div>
+    <div class="overlapver3">0px</div>
+    <p>kotak 0px ikut juga bergerak keatas</p>
+
+    <hr>
+    <h1>`margin-left: auto` & `margin-right: auto`</h1>
+    <div class="overlapver1 auto"></div>
+
+    <hr>
+    <h1>semua kotak diberikan auto</h1>
+    <div class="overlapver1 auto"></div>
+    <div class="overlapver2 auto"></div>
+    <div class="overlapver3 auto"></div>
+    <p>maka berada di tengah</p>
+
+    <hr>
+    <h1>Shorthand</h1>
+    <ul>
+        <li>margin: {semua penjuru}</li>
+        <li>margin: {atas bawah} {kiri kanan}</li>
+        <li>margin: {atas} {kiri dan kana} {bawah}</li>
+        <li>margin: {atas} {kanan} {bawah} {kiri} </li>
+    </ul>
+
+
+</body>
+
+</html>

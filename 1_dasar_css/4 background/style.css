@@ -1,0 +1,30 @@
+/* CSS background */
+/* background-color - mengatur warna pada background */
+/* backgorund-image - mengatur gambar pada background */
+/* background-postion - mengatur posisi gambar pada background
+                      - top left, top center, top right, center left
+                      - center center, center right, bottom left
+                      - bottom center, bottom right, x%, y%
+                      - x-pos, y-pos */
+/* background-repeat - repeat-x, repeat-y, no-repeat - mengatur jenis pengulangan gambar pada background */
+
+/* short hand */
+/* background: color url() position repeat; */
+
+body {
+    /* try -> lightblue, #999999, rgb(0,0,0)*/
+    /* background-color: white; */
+    /* background-image: url(background-img/tree.jpeg); */
+    /* try -> repeat-y, repeat-x, no repeat*/
+    /* background-repeat: no-repeat; */
+    /* background-position: bottom center; */
+
+
+    background: white url(background-img/tree.jpeg) top right no-repeat;
+
+
+}
+
+h1 {
+    color: yellow;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius</title>
+
+    <style>
+
+        .div {
+
+            width: 300px;
+            height: 300px;
+            background-color: salmon;
+            margin: auto;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 300px;
+
+        }
+
+        .elipse {
+
+            width: 500px;
+            height: 300px;
+            background-color: salmon;
+            margin: auto;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 300px;
+
+        }
+
+        .shorthand {
+
+            width: 300px;
+            height: 300px;
+            background-color: salmon;
+            margin: auto;
+            text-align: center;
+            line-height: 300px;
+            border-radius: 0 50% 0 50%;
+
+        }
+
+        .shorthand-bulat {
+            
+            width: 300px;
+            height: 300px;
+            background-color: salmon;
+            margin: auto;
+            text-align: center;
+            line-height: 300px;
+            border-radius: 50%;
+            overflow: hidden;
+
+        }
+
+        .shorthand-bulat img {
+
+            width: 300px;
+            height: 300px;
+            
+        }
+
+        .border-radius-50persen {
+
+            border-radius: 50%;
+
+        }
+
+        .border-top-right-radius-50persen {
+            border-top-right-radius: 50%;
+        }
+
+        .border-bottom-left-radius-50persen {
+            border-bottom-left-radius: 50%;
+        }
+
+        .img {
+            background-image: url(github.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>memberikan `border-radius: 10px`</h1>
+    <div class="div">Hello World</div>
+
+    <br><br><br><br><br>
+    <h1>untuk menjadikannya bulat harus setengah dari ukuran width dan height nya</h1>
+    <h2>memberikan `border-radius: 50%`</h2>
+    <div class="div border-radius-50persen">Hello World</div>
+
+    <br><br><br><br><br>
+    <h1>membuat bentuk elipse</h1>
+    <div class="elipse">Hello World</div>
+
+    <br><br><br><br><br>
+    <h1>`border-top-right-radius: 50%` dan `border-bottom-left-radius: 50%`</h1>
+    <div class="div border-top-right-radius-50persen border-bottom-left-radius-50persen">Hello World</div>
+
+    <br><br><br><br><br>
+    <h1>shorthand</h1>
+    <div class="shorthand">Hello World</div>
+
+    <br><br><br><br><br>
+    <h1>menambahakan img di div</h1>
+    <div class="shorthand img">Hello World</div>
+
+    <br><br><br><br><br>
+    <h1>menambahakan img di dalam div</h1>
+    <div class="shorthand-bulat">
+        <img src="github.png">
+    </div>
+
+</body>
+</html>

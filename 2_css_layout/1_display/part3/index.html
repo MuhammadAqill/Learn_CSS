@@ -1,0 +1,119 @@
+<!-- tag pada HTML digunakan untuk memberikan 'maksud / 'arti' pada sebuah konten (p untuk paragraf, h1 untuk heading utam, dll) -->
+<!-- Tag <div> dan <span> tidak memiliki 'arti' apapun, keduanya digunakan untuk mengelompokkan tag-tag HTML dan memberikan informasi terhadap tag-tag tersebut -->
+
+<!-- div - default displaynya adalah block, dan span default displaynya adalah inline -->
+
+<!-- display : -->
+<!-- inline 
+    - elemen HTML yang secara default tidak menambahkan baris baru ketika dibuat
+    - lebar dan tinggi elemennya sebesar konted yang ada di dalamnya
+    - kita tidak dapat mengatur tinggi dan lebar dari elemen inline
+    - margin dan padding hanya mempengaruhi elemen secara horizontal, tidak vertikal
+
+    - elemen inline :-
+        - b, strong, i, em
+        - a, span, sub, sup,
+        - button, input, label,
+        - select, textarea
+-->
+
+<!-- inline-block 
+    - Tidak ada elemen yang secara default memiliki properti display: inline-block;
+    - Kita harus ubah secara manul properti tersebut
+    - Perilaku dasarnya sama dengan elemen inline
+    - Perbedaanya, elemen inline-block dapat kita atur tinggi dan leber-nya
+-->
+
+<!-- block 
+    - Elemen HTML yang secara default menambahkan baris baru ketika dibuat
+    - Jika tidak diatur lebar-nya, maka lebar default dari elemen block akan memenuhi lebar dari browser / parent-nya
+    - Kita dapat mengatur tinggi dan lebar dari elemen block
+    - Di dalam elemen block, kita dapat menyimpan tag dengan elemen inline, inline-block, atau bahkan elemen block lagi
+
+    elemen block :-
+        - h1-h6, p, ol, ul, li, form, hr, div ...
+-->
+
+
+<!-- none - digunakan untuk menghilangkan sebuah elemen -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>div & span</title>
+
+    <style>
+        a {
+            /* menggunakan inline-block untuk mengubah defaultnya pada tag a inline */
+            /* dengan memberikan inline-block, kita dapat mengatur width dan height */
+            display: inline-block;
+            background-color: pink;
+            width: 200px;
+            height: 200px;
+
+        }
+
+        img {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Selamat Datang Di Website Kami</h1>
+    </div>
+
+    <!-- lebar dan tinggi elemennya sebesar konted yang ada di dalamnya -->
+    <div class="navigasi">
+        <hr>
+        <h2>Ketika diberikan display: inline-block</h2>
+        <hr>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 5</a>
+        <hr>
+    </div>
+
+    <h1></h1>
+    <div class="main">
+        <h2>Judul Artikel</h2>
+        <!-- menambahkan baris -->
+        <h2>menambah baris baru</h2>
+        <!-- hanya image saja yang kita bisa atur width dan heightnya walan pun defaultnya display: inline -->
+        <img src="../logo.png" alt="">
+        <p><span>Lorem ipsum dolor sit amet</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores
+            quae expedita nisi. Magnam voluptatum
+            adipisci aliquam officiis tempore nobis, illum minus dolores libero velit delectus cumque quas cum, nostrum
+            veniam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus iure obcaecati sequi molestias
+            doloribus maxime, tempora dignissimos impedit perspiciatis iusto fugit nesciunt eius! Voluptates id
+            explicabo
+            cupiditate ex dolore tempora.
+            Eum id quisquam officiis hic perferendis placeat! Optio, enim maxime. Quis aperiam eaque ullam fugit tenetur
+            voluptatibus sunt eligendi veniam libero nemo consequuntur possimus doloribus molestias, consectetur
+            consequatur
+            eius necessitatibus.
+        </p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae dolor doloremque cumque sapiente quod nobis
+            itaque
+            cupiditate sequi corporis reiciendis, sunt facilis tempore, fuga iusto! Consectetur fugit nostrum esse ipsa!
+        </p>
+    </div>
+
+    <div class="copyright">
+        <p class="copyright">Copyright 2015, 4k1ra</p>
+    </div>
+</body>
+
+</html>
